@@ -1,0 +1,45 @@
+<view class="list-container">
+  <view class="list-item" wx:for="{{list}}" wx:key="">
+    <view class="item-title" bindtap="linkDetail" data-id='{{item.jobId}}'>
+      <view class="title-word">{{item.jobTitle}}</view>
+      <view class='item-status'>行动中</view>
+    </view> 
+    <view class='item-content' bindtap="linkDetail" data-id='{{item.jobId}}'>
+      <view class='item-content-row'>
+        <text class='row-title'>任务编号：</text>
+        <text class='row-content'>{{item.jobId}}</text>
+      </view>
+      <view class='item-content-row'>
+        <text class='row-title'>任务创建描述：</text>
+        <text class='row-content'>{{item.createDec}}</text>
+      </view>
+      <view class='item-content-row'>
+        <text class='row-title'>任务创建时间：</text>
+        <text class='row-content'>{{item.createTime}}</text>
+      </view>
+      <view class='item-content-row'>
+        <text class='row-title'>任务激活描述：</text>
+        <text class='row-content'>{{item.activeDec}}</text>
+      </view>
+      <view class='item-content-row'>
+        <text class='row-title'>任务激活时间：</text>
+        <text class='row-content'>{{item.activeTime}}</text>
+      </view>
+      <view class='item-content-row'>
+        <text class='row-title'>当前负责人：</text>
+        <text class='row-content'>{{item.principal}}</text>
+      </view>
+      <view class='item-content-row'>
+        <text class='row-title'>参与人：</text>
+        <text class='row-content'>{{item.participant}}</text>
+      </view>
+    </view>
+    <view class='item-bottom' bindtap="linkDetail" data-id='{{item.jobId}}'>
+      <view class='bottom-title' >查看详情</view>
+      <view class='bottom-arrow'>
+        <view class='arrow-instance'></view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='personal-setting'>个人设置</view>

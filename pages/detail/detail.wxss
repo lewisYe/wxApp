@@ -1,0 +1,8 @@
+/* pages/detail/detail.wxss */
+.detail-container{
+  position: relative;
+}
+.information-box{
+  position: absolute;
+  top: 20rpx;
+}
