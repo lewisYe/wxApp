@@ -1,8 +1,52 @@
 /* pages/detail/detail.wxss */
-.detail-container{
+
+.detail-container {
   position: relative;
 }
-.information-box{
+
+.info-box {
   position: absolute;
   top: 20rpx;
+  width: 100%;
+}
+
+.inside-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32rpx;
+}
+
+.info-status {
+  padding: 24rpx;
+  font-size: 26rpx;
+  color: #03b651;
+  background: #fff;
+  box-shadow: 0 4rpx 12rpx 0 #e2e2e2;
+  border-radius: 45rpx;
+}
+
+.action-box {
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+}
+
+.action-add {
+  padding: 23rpx 50rpx;
+  background: #fff;
+  box-shadow: 0 4rpx 12rpx 0 #e2e2e2;
+  border-radius: 51rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-job {
+  padding: 23rpx 50rpx;
+  background: #fff;
+  box-shadow: 0 4rpx 12rpx 0 #e2e2e2;
+  border-radius: 51rpx;
 }

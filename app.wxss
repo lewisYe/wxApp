@@ -1,49 +1,5 @@
+@import '/icon/iconfont.wxss';
 page{
   font-size: 28rpx;
   background: #f6f6f6;
 }
-
-/**引入第三方icon**/
-@font-face {
-  font-family: 'iconfont';  /* project id 980914 */
-  src: url('//at.alicdn.com/t/font_980914_yj8xmthd05.eot');
-  src: url('//at.alicdn.com/t/font_980914_yj8xmthd05.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_980914_yj8xmthd05.woff') format('woff'),
-  url('//at.alicdn.com/t/font_980914_yj8xmthd05.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_980914_yj8xmthd05.svg#iconfont') format('svg');
-}
-.iconfont {
-  font-family:"iconfont" !important;
-  font-size:16px;
-  font-style:normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-gonggaox:before { content: "\e9bd"; }
-
-.icon-bofang-xiansuoxinxinx:before { content: "\e9be"; }
-
-.icon-gonggaox1:before { content: "\e9c0"; }
-
-.icon-buhangx:before { content: "\e9c1"; }
-
-.icon-diandongchex:before { content: "\e9c2"; }
-
-.icon-motuochex:before { content: "\e9c3"; }
-
-.icon-tianjiatupianshipinx:before { content: "\e9c4"; }
-
-.icon-zhankaix:before { content: "\e9c5"; }
-
-.icon-xiaokechex:before { content: "\e9c6"; }
-
-.icon-zihangchex:before { content: "\e9c7"; }
-
-.icon-tianjiaxiansuox:before { content: "\e9c8"; }
-
-.icon-bofang-tianjiaxiansuox:before { content: "\e9c9"; }
-
-.icon-shouqix:before { content: "\e9ca"; }
-
-.icon-shanchu-tianjiaxiansuox:before { content: "\e9cb"; }

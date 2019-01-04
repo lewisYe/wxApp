@@ -1,39 +1,67 @@
 Page({
   data: {
-    longitude:'',
-    latitude:'',
+    longitude: '',
+    latitude: '',
+    circles: [],
+    markers: [{
+      latitude: '30.291049',
+      longitude: '120.010965',
+      iconPath: '/image/address.png',
+      width: '24px',
+      height: '24px'
+    }],
     polyline: [{
       points: [{
-        longitude: 113.3245211,
-        latitude: 23.10229
-      }, {
-        longitude: 113.324520,
-        latitude: 23.21229
-      }],
-      color: '#FF0000DD',
-      width: 2,
-      dottedLine: true
-    }],
+          latitude: 30.285679,
+          longitude: 119.996839
+        }, {
+          latitude: 30.286846,
+          longitude: 119.996731
+        },
+        {
+          latitude: 30.287532,
+          longitude: 119.999971
+        },
+        {
+          latitude: 30.288421,
+          longitude: 120.002847
+        },
+        {
+          latitude: 30.289199,
+          longitude: 120.004778
+        },
+        {
+          latitude: 30.290237,
+          longitude: 120.007353
+        },
+        {
+          latitude: 30.291049,
+          longitude: 120.010965
+        }
+      ],
+      color: '#FF6363',
+      width:5,
+      dottedLine:true,
+      arrowLine:true,
+    }]
   },
-  regionchange(e) {
-    console.log(e.type)
-  },
-  markertap(e) {
-    console.log(e.markerId)
-  },
-  controltap(e) {
-    console.log(e.controlId)
-  },
-  onLoad(){
+  onLoad() {
     wx.getLocation({
       type: 'gcj02', // 返回可以用于wx.openLocation的经纬度
-      success:(res)=> {
+      success: (res) => {
         const latitude = res.latitude
         const longitude = res.longitude
         console.log(latitude, longitude)
         this.setData({
           latitude,
-          longitude
+          longitude,
+          circles: [{
+            latitude,
+            longitude,
+            radius: 2000,
+            color: '#FF6363',
+            fillColor: '#ffffff00'
+          }]
         })
       }
     })
