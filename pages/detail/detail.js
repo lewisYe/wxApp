@@ -43,7 +43,8 @@ Page({
       width:5,
       dottedLine:true,
       arrowLine:true,
-    }]
+    }],
+    isFull:false
   },
   onLoad() {
     wx.getLocation({
@@ -64,6 +65,18 @@ Page({
           }]
         })
       }
+    })
+  },
+  previewImage(e){
+    wx.previewImage({
+      urls: [e.target.dataset.url],
+      current: e.target.dataset.url
+    })
+  },
+  fullScreen(e){
+    let isFull = e.detail.fullScreen
+    this.setData({
+      isFull
     })
   }
 })

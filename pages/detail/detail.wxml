@@ -1,5 +1,6 @@
 <view class='detail-container'>
   <map
+    hidden="{{isFull ? true : false}}"
     id="map"
     subkey="BWRBZ-LOM35-MMPIO-Q7ERU-QMBT3-NDBSZ"
     longitude="{{longitude}}"
@@ -25,4 +26,54 @@
       <cover-view class="action-job">任务概览</cover-view>
     </cover-view>
   </cover-view>
+  <cover-view class='clue-info-box'>
+    <cover-view class='inside-box'>
+      <cover-view class='clue-info-title'>
+        线索信息
+      </cover-view>
+    </cover-view>
+  </cover-view>
+</view>
+<view class='clue-infos-warp'>
+ <view class='clue-infos'>
+  <view class='clue-info-item' wx:for="{{[1,2,3,4]}}" wx:key="">
+    <view class='item-time' >
+      <view>08-25</view>
+      <view>12:12</view>
+    </view>
+    <view class='item-content'>
+      <view class='item-content-title'>
+        线索类型：首次入行
+      </view>
+      <view class='item-content-info'>
+        <text>上传人员：</text><text>张三</text>
+      </view>
+      <view class='item-content-info'>
+        <text>线索概要：</text><text>线索概要线索概要线索概要线索</text>
+      </view>
+      <view class='item-content-info'>
+        <text>线索内容：</text><text>线索内容线索内容</text>
+      </view>
+      <view class='item-content-media'>
+        <image
+          mode="scaleToFill"
+          src="https://developers.weixin.qq.com/miniprogram/dev/image/cat/0.jpg?t=18122815"
+          bindtap='previewImage'
+          data-url="https://developers.weixin.qq.com/miniprogram/dev/image/cat/0.jpg?t=18122815"
+        ></image>
+        <video
+          id="myVideo"
+          src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
+          controls
+          objectFit="fill"
+          autoplay="false"
+          muted
+          bindfullscreenchange="fullScreen"
+        ></video>
+      </view>
+      <view class='item-circle'></view>
+      <view class='item-circle-warp'></view>
+    </view>
+  </view>
+ </view>
 </view>
