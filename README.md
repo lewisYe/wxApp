@@ -1,5 +1,5 @@
 ## Project Introduction
-How to develop  a project use  [WeChat Mini Program](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=19010215) 
+How to develop  a [WeChat Mini Program](https://developers.weixin.qq.com/miniprogram/dev/index.html?t=19010215) 
 
 The project is a simple demo. 
 
