@@ -1,4 +1,5 @@
-<view class="list-container">
+<view class='list-warp-box'>
+  <view class="list-container">
   <view class="list-item" wx:for="{{list}}" wx:key="">
     <view class="item-title" bindtap="linkDetail" data-id='{{item.jobId}}'>
       <view class="title-word">{{item.jobTitle}}</view>
@@ -42,4 +43,25 @@
     </view>
   </view>
 </view>
-<view class='personal-setting'>个人设置</view>
+<view class='personal-setting' bindtap='onBtnClose'>个人设置</view>
+<view class='personal-setting-warp-box' hidden='{{isHidden}}'>
+  <view class='personal-setting-box'>
+    <view class='personal-setting-title'>个人设置</view>
+    <view class='setting-item'>
+      <view class='setting-item-title'>是否接受任务分派</view>
+      <switch checked color="#108EE9"/>
+    </view>
+    <view class='setting-item-noline'>
+      <view class='setting-item-title'>设置当前交通工具</view>
+      <view class="transportation">
+        <view bindtap="linkToTool">自行车</view>
+        <view class='arrow'></view>
+      </view>
+    </view>
+    <view class='btn-close' bindtap='onBtnClose'>
+      关闭
+    </view>
+  </view>
+</view>
+</view>
+

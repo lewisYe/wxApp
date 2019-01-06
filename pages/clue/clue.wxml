@@ -1,0 +1,48 @@
+<view class='clue-box'>
+ <view class='clue-info'>
+  <view class='clue-info-title'>线索信息</view>
+  <view class='clue-info-content'>
+    <view class='clue-type-title'>线索类型</view>
+    <view class='types-tags'>
+      <block wx:for='{{types}}' wx:key>
+        <view class='{{ index != ckIndex ? "type-tag" : "type-tag check"}}' data-index="{{index}}" bindtap='onTap'>{{item.name}}</view>
+      </block>
+    </view>
+    <view class='clue-content-title'>线索内容</view>
+    <textarea
+      placeholder="请填写线索内容"
+    />
+  </view>
+ </view>
+ <view class='image-video'>
+  <view class='image-video-title'>视频／图片</view>
+  <view class='image-video-list'>
+    <block wx:for='{{images}}' wx:key>
+      <view class='image-video-item' data-index='{{index}}'>
+        <image src='{{item}}' mode="scaleToFill"></image>
+        <view class='iconfont icon-shanchu-tianjiaxiansuox' data-index='{{index}}' bindtap="deleteImage"></view>
+      </view>
+    </block>
+    <block wx:for='{{videos}}' wx:key>
+      <view class='image-video-item' data-index='{{index}}'>
+        <video
+          id="myVideo"
+          src="{{item}}"
+          controls
+          objectFit="fill"
+          autoplay="false"
+          muted
+        ></video>
+        <view class='iconfont icon-shanchu-tianjiaxiansuox' data-index='{{index}}' bindtap="deleteVideo"></view>
+      </view>
+    </block>
+    <view class='image-video-upload' bindtap='choose'>
+      <view class='iconfont icon-tianjiatupianshipinx'></view>
+      <view class='upload-title'>添加图片／视频</view>
+    </view>
+  </view>
+ </view>
+ <view class='btn'>
+  确定
+ </view>
+</view>

@@ -6,8 +6,7 @@
     longitude="{{longitude}}"
     latitude="{{latitude}}"
     scale="14"
-    markers="{{markers}}"
-    polyline="{{polyline}}"
+   
     circles="{{circles}}"
     show-location
     style="width: 100%; height: 500px;"
@@ -21,7 +20,7 @@
   <cover-view class='action-box'>
     <cover-view class='inside-box'>
       <cover-view class='action-add'>
-      <cover-view >添加线索</cover-view>
+      <cover-view bindtap="addClue">添加线索</cover-view>
       </cover-view>
       <cover-view class="action-job">任务概览</cover-view>
     </cover-view>

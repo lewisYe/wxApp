@@ -78,5 +78,10 @@ Page({
     this.setData({
       isFull
     })
+  },
+  addClue(){
+    wx.navigateTo({
+      url: '/pages/clue/clue',
+    })
   }
 })

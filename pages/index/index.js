@@ -3,7 +3,8 @@ const mockData = require('../../mock/list.js')
 const app = getApp();
 Page({
   data: {
-    list:[]
+    list:[],
+    isHidden:true
   },
   getList(pageNo, pageSize){
     wx.request({
@@ -33,6 +34,17 @@ Page({
   onReachBottom(){
     this.setData({
        list: [...this.data.list,...mockData.list]
+    })
+  },
+  onBtnClose(e){
+    console.log(e)
+    this.setData({
+      isHidden: !this.data.isHidden
+    })
+  },
+  linkToTool(){
+    wx.navigateTo({
+      url: '/pages/tool/tool'
     })
   }
 })

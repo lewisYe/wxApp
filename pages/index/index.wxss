@@ -1,4 +1,7 @@
 /**index.wxss**/
+.list-warp-box{
+  position: relative;
+}
 .list-container{
   padding: 20rpx 20rpx 100rpx 20rpx;
 }
@@ -82,4 +85,74 @@
   z-index: 99;
   width: 100%;
   box-shadow: 0 4px 12px 0 #E2E2E2;
+}
+.personal-setting-warp-box{
+  position: absolute;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom:0;
+  background: rgba(0,0,0,.4);
+  z-index: 999;
+}
+.personal-setting-box{
+  height: 456rpx;
+  background: #FFFFFF;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  width: 100%;
+  box-shadow: 0 4px 12px 0 #E2E2E2;
+}
+.personal-setting-title{
+  height: 88rpx;
+  line-height:88rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #202123;
+  border-bottom:1px solid #E6E6E6; 
+}
+.setting-item{
+  height: 106rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32rpx;
+  border-bottom:1px solid #E6E6E6;
+}
+.setting-item-title{
+  font-size: 32rpx;
+  color: #46464B;
+}
+.setting-item-noline{
+  height: 106rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32rpx;
+}
+.transportation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.transportation .arrow{
+  border: 1px solid #666666;
+  width: 14rpx;
+  height: 14rpx;
+  border-right: 0;
+  border-bottom: 0;
+  transform: rotate(135deg);  
+}
+.btn-close{
+  background: #108EE9;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #FFFFFF;
+  font-size: 36rpx;
 }

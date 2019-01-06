@@ -1,0 +1,8 @@
+<view class='tool'>
+<block wx:for='{{tool}}' wx:key>
+  <view class='{{ index != ckIndex ? "tool-item" : "tool-item blue"}}'  wx:key="{{index}}" data-index="{{index}}" bindtap="onTap">
+    <view class='{{item.name}}' data-index="{{index}}"></view>
+    <view class='item-title' data-index="{{index}}">{{item.title}}</view>
+  </view>
+</block>
+</view>

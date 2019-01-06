@@ -1,0 +1,129 @@
+.clue-box{
+  background: #f6f6f6;
+  padding-bottom: 100rpx;
+}
+.clue-info{
+ background: #ffffff;
+}
+.clue-info-title{
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 32rpx;
+  border-bottom: 1px solid #E6E6E6;
+  font-size: 28rpx;
+  color: #46464B;
+  margin-top: 20rpx;
+}
+.clue-info-content{
+  padding: 32rpx;
+}
+.clue-type-title{
+  font-size: 26rpx;
+  color: #6C6E70;
+}
+.clue-content-title{
+  font-size: 26rpx;
+  color: #6C6E70;
+  margin-top: 20rpx;
+}
+.types-tags{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20rpx;
+}
+.type-tag{
+  padding: 5rpx 40rpx;
+  font-size: 26rpx;
+  color: #777A7B;
+  border: 1px solid #CCCCCC;
+  border-radius: 8rpx;
+  margin-right: 8rpx;
+  margin-bottom: 8rpx;
+}
+.check{
+  background: rgba(16,142,233,0.10);
+  border: 1px solid #108EE9;
+  color: #108EE9;
+}
+textarea{
+  background: #F7F7F7;
+  border: 1px solid #D9D9D9;
+  width: 100%;
+  margin-top: 10rpx;
+  font-size: 26rpx;
+  color: #ADB0B2;
+  height: 220rpx;
+  padding: 10rpx;
+}
+.image-video{
+  margin-top: 10rpx;
+  background: #ffffff;
+}
+.image-video-title{
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 32rpx;
+  border-bottom: 1px solid #E6E6E6;
+  font-size: 28rpx;
+  color: #46464B;
+}
+.image-video-list{
+  padding: 20rpx 0rpx 20rpx 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.image-video-upload{
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  width: 224rpx;
+  height: 224rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 14rpx;
+  margin-right: 14rpx;
+}
+.icon-tianjiatupianshipinx{
+  font-size: 67rpx;
+  color: #B3B3B3;
+}
+.upload-title{
+  font-size: 22rpx;
+  color: #B3B3B3;
+  margin-top: 20rpx;
+}
+.image-video-item{
+  border: 1px solid #CCCCCC;
+  width: 224rpx;
+  height: 224rpx;
+  margin-bottom: 14rpx;
+  margin-right: 14rpx;
+  position: relative;
+}
+.icon-shanchu-tianjiaxiansuox{
+  position: absolute;
+  right: 8rpx;
+  top: 8rpx;
+  color: rgba(204, 204, 204, .8)
+}
+image, video{
+  width: 224rpx;
+  height: 224rpx;
+}
+.btn{
+  background: #108EE9;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
