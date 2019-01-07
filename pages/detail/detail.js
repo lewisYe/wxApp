@@ -83,5 +83,10 @@ Page({
     wx.navigateTo({
       url: '/pages/clue/clue',
     })
+  },
+  overview(){
+    wx.navigateTo({
+      url: '/pages/overview/overview',
+    })
   }
 })

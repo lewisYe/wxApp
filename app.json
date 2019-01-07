@@ -1,10 +1,10 @@
 {
   "pages": [
-    "pages/clue/clue",
     "pages/index/index",
     "pages/detail/detail",
-    "pages/tool/tool"
-   
+    "pages/tool/tool",
+    "pages/clue/clue",
+    "pages/overview/overview"
   ],
   "window": {
     "backgroundColor": "#eeeeee",

@@ -1,0 +1,71 @@
+<view>
+  <view class='overview'>
+    <view class='overview-title'>任务概览</view>
+    <view class='overview-items'>
+      <view class='overview-item'>
+        <view class='item-title'>编号</view>
+        <view class='item-value'>20181123037611</view>
+      </view>
+      <view class='overview-item'>
+        <view class='item-title'>任务标题</view>
+        <view class='item-value'>黑豹行动</view>
+      </view>
+      <view class='overview-item'>
+        <view class='item-title'>类型</view>
+        <view class='item-value'>涉毒</view>
+      </view>
+      <view class='overview-item'>
+        <view class='item-title'>任务对象</view>
+        <view class='item-value'>王红</view>
+      </view>
+      <view class='overview-item space'>
+        <view class='item-title'>任务对象类型</view>
+        <view class='item-value'>人</view>
+      </view>
+      <view class='overview-item'>
+        <view class='item-title'>创建时间</view>
+        <view class='item-value'>2018-12-11  12:22:34</view>
+      </view>
+      <view class='overview-item'>
+        <view class='item-title'>创建操作账号</view>
+        <view class='item-value'>张强</view>
+      </view>
+      <view class='overview-item line'>
+        <view class='item-title'>创建备注</view>
+        <view class='item-value'>无</view>
+      </view>
+      <view class='overview-item'>
+        <view class='item-title'>激活时间</view>
+        <view class='item-value'>2018-12-11  12:22:34</view>
+      </view>
+      <view class='overview-item'>
+        <view class='item-title'>激活操作账号</view>
+        <view class='item-value'>张强</view>
+      </view>
+      <view class='overview-item line'>
+        <view class='item-title'>激活备注</view>
+        <view class='item-value'>无</view>
+      </view>
+      <view class='overview-item'>
+        <view class='item-title'>结束时间</view>
+        <view class='item-value'>2018-12-11  12:22:34</view>
+      </view>
+      <view class='overview-item'>
+        <view class='item-title'>结束操作账号</view>
+        <view class='item-value'>张强</view>
+      </view>
+      <view class='overview-item line'>
+        <view class='item-title'>结束备注</view>
+        <view class='item-value'>无</view>
+      </view>
+      <view class='overview-item'>
+        <view class='item-title'>负责人</view>
+        <view class='item-value'>张三</view>
+      </view>
+      <view class='overview-item'>
+        <view class='item-title'>参与人</view>
+        <view class='item-value'>李四、王五</view>
+      </view>
+    </view>
+  </view>
+</view>

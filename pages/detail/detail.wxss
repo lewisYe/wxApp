@@ -63,6 +63,7 @@
   border-bottom: 1px solid #E6E6E6;
 }
 .clue-infos-warp{
+  border-top: 1px solid #E6E6E6;
   padding: 0 32rpx;
 }
 .clue-infos{

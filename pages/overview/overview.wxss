@@ -1,0 +1,38 @@
+.overview{
+  background: #ffffff;
+}
+.overview-title{
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: #46464B;
+  line-height: 40px;
+  padding: 0 32rpx;
+  border-bottom: 1px solid #E6E6E6;
+}
+.overview-items{
+  padding: 32rpx;
+}
+.overview-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 40rpx;
+  height: 40rpx;
+  margin-bottom: 16rpx;
+}
+.item-title{
+  font-size: 26rpx;
+  color: #46464B;
+}
+.item-value{
+  font-size: 26rpx;
+  color: #777A7B;
+}
+.space{
+  margin-bottom: 80rpx;
+}
+.line{
+  padding-bottom: 40rpx;
+  border-bottom: 1px solid  #E6E6E6;
+}
